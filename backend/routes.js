@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const User = require('./models/User');
 
-// Basic Examples
 router.post('/insertOne', async (req, res) => {
   const result = await User.create(req.body);
   res.send(result);
