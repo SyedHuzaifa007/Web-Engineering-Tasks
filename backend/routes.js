@@ -47,7 +47,6 @@ router.get('/countDocs', async (req, res) => {
   res.send({ count: result });
 });
 
-// Update/Delete/Replace
 router.patch('/updateOne', async (req, res) => {
   const result = await User.updateOne(req.query, req.body);
   res.send(result);
